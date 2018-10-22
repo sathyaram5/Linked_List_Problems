@@ -1,6 +1,6 @@
 boolean permutation(String s, String t) {
-2 if (s.length() != t.length()) {
-3 return false;
+ if (s.length() != t.length()) {
+ return false;
  }
 }
 int[] letters = new int[128]; II Assumption
