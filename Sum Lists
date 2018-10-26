@@ -1,0 +1,24 @@
+LinkedListNode addlists(LinkedListNode 11, LinkedListNode 12, int carry) {
+if (11 ==·null && 12 == null && carry== 0) {
+ return null;
+ }
+
+ LinkedlistNode result new LinkedlistNode();
+ int value = carry;
+if (11 != null) {
+ value += 11.data;
+}
+ if (12 != null) {
+value += 12.data;
+}
+result.data value% 10; /* Second digit of number */
+
+ /*Recurse */
+ if (11 != null II 12 != null) {
+ LinkedlistNode more = addlists(ll == null ? null : l1.next,
+ l2 == null? null : l2 . next,
+value>= 10? 1 : 0);
+ result.setNext(more);
+ }
+return result;
+}
